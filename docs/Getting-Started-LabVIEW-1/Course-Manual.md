@@ -23,7 +23,7 @@ If you are using the Emulator, load it by navigating to `LabVIEW Instrument Emul
 !!! Success "Emulator Setup Complete" 
     The emulator should now be ready to use and “Connecting” will be displayed in status bar.
 
-![A screenshot showing the subnet-selection window and the main emulator screen with the status "connecting"](./img/3e9d99d74db0a6a0_2.png)
+    ![A screenshot showing the subnet-selection window and the main emulator screen with the status "connecting"](./img/3e9d99d74db0a6a0_2.png)
 
 ## Lesson 1 – LabVIEW “Hello World” LED On/Off
 !!! info "Setting up the Hardware" 
