@@ -1,0 +1,16 @@
+site_name: LabVIEW Community Training Initiative Documentation
+theme:
+  name: material
+  features:
+    - navigation.instant
+repo_url: https://github.com/j-medland/test_cti_docs
+
+
+markdown_extensions:
+- attr_list
+- md_in_html
+- admonition
+- pymdownx.details
+- pymdownx.superfences
+- toc:
+    permalink: true
