@@ -1,0 +1,864 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Course Manual One - LabVIEW Community Training Initiative Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#course-manual-one" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LabVIEW Community Training Initiative Documentation" class="md-header__button md-logo" aria-label="LabVIEW Community Training Initiative Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LabVIEW Community Training Initiative Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Course Manual One
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/j-medland/test_cti_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LabVIEW Community Training Initiative Documentation" class="md-nav__button md-logo" aria-label="LabVIEW Community Training Initiative Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    LabVIEW Community Training Initiative Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/j-medland/test_cti_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started LabVIEW 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started LabVIEW 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Course Manual One
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Course Manual One
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-the-system" class="md-nav__link">
+    Setting up the System
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-1-labview-hello-world-led-onoff" class="md-nav__link">
+    Lesson 1 – LabVIEW “Hello World” LED On/Off
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson 1 – LabVIEW “Hello World” LED On/Off">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lesson-instructions" class="md-nav__link">
+    Lesson Instructions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-the-system" class="md-nav__link">
+    Setting up the System
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-1-labview-hello-world-led-onoff" class="md-nav__link">
+    Lesson 1 – LabVIEW “Hello World” LED On/Off
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson 1 – LabVIEW “Hello World” LED On/Off">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lesson-instructions" class="md-nav__link">
+    Lesson Instructions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="course-manual-one">Course Manual One<a class="headerlink" href="#course-manual-one" title="Permanent link">&para;</a></h1>
+<p>This course manual should guide you through the process of setting up your system and peforming your first measurments using LabVIEW [#todo review this intro text]</p>
+<h2 id="setting-up-the-system">Setting up the System<a class="headerlink" href="#setting-up-the-system" title="Permanent link">&para;</a></h2>
+<p>If you are using the Emulator, load it by navigating to <code>LabVIEW Instrument Emulator/builds/HandsOn/CTIPicoVISAEmulator/</code></p>
+<ul>
+<li>Right-click in the window and select Open Terminal Here</li>
+</ul>
+<p><img alt="A screenshot of the file manager opened to the location specified" src="../img/f2776256fa118f48.png" /></p>
+<ul>
+<li>Type in <code>./CTIPicoVISAEmulator.exe</code></li>
+</ul>
+<p><img alt="A screenshot of the terminal with the command specified" src="../img/d9b32bc0d4b30b18.png" /></p>
+<ul>
+<li>Selet the correct subnet when prompted to by the pop-up window</li>
+</ul>
+<!-- use figure to centre image-->
+<figure>
+<p><img alt="A screenshot showing the subnet-selection window" src="../img/3e9d99d74db0a6a0.png" /></p>
+</figure>
+<div class="admonition success">
+<p class="admonition-title">Emulator Setup Complete</p>
+<p>The emulator should now be ready to use and “Connecting” will be displayed in status bar.</p>
+</div>
+<p><img alt="A screenshot showing the subnet-selection window and the main emulator screen with the status &quot;connecting&quot;" src="../img/3e9d99d74db0a6a0_2.png" /></p>
+<h2 id="lesson-1-labview-hello-world-led-onoff">Lesson 1 – LabVIEW “Hello World” LED On/Off<a class="headerlink" href="#lesson-1-labview-hello-world-led-onoff" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Setting up the Hardware</p>
+<p>If you have the hardware for this course then you will need to set up and wire it as shown in the image below. 
+If not skip to <a href="#lesson-instructions">Lesson Instructions</a>.</p>
+<p><img alt="A hardware setup diagram for this lesson" src="../img/5e2f63dfa4111be5.png" /></p>
+<p><img alt="An image of the hardware with the connections made" src="../img/60835a81599ba54e.png" /></p>
+</div>
+<h3 id="lesson-instructions">Lesson Instructions<a class="headerlink" href="#lesson-instructions" title="Permanent link">&para;</a></h3>
+<p>The LabVIEW version of a “Hello World” program is to make a piece of hardware do something basic, usually it is turning an LED On and Off.
+Load LabVIEW and select a New VI.</p>
+<p><img alt="" src="../img/84f601ca90829cf5.png" /></p>
+<p>Setup the screen like this:</p>
+<p><img alt="" src="../img/d3339a8c94152a67.png" /></p>
+<p>In LabVIEW a VI is a Virtual Instrument is equivalent to a function or module in other languages. A LabVIEW program is made up of 1 or more VIs. </p>
+<ul>
+<li>In the block diagram right-click and navigate to the HandsOnPi2040 Driver Palette</li>
+</ul>
+<p><img alt="" src="../img/9e02a1a28b7aa383.png" /></p>
+<ul>
+<li>Drag and drop Initialize.vi, WriteDO.vi and Close.vi onto the block diagram as shown below.</li>
+</ul>
+<p><img alt="" src="../img/c1d89c9170d70476.png" /></p>
+<p><em>Notice that the Run-arrow is broken (the run arrow appears in the top left corner), if you press it, it will list all the reasons why it’s broken.</em></p>
+<!-- use figure to centre image-->
+<figure>
+<p><img alt="" src="../img/f336eeba5d978273.png" /></p>
+</figure>
+<ul>
+<li>LabVIEW will not let you run the source-code until these errors are sorted. Close the Error List and select all of the Vis. (Left-click drag on mouse).</li>
+</ul>
+<!-- use figure to centre image-->
+<figure>
+<p><img alt="" src="../img/bfeaaa4d2909770a.png" /></p>
+</figure>
+<ul>
+<li>Press Ctrl+space to bring up quick drop and Ctrl+W to wire the VIs together. Quick drop is an extremely useful productivity tool that ships with LabVIEW. It allows you to automate repetitive tasks with a few key combos.</li>
+</ul>
+<p><em>If you press the Run arrow now you will notice that there are only 2 issues listed, good job!</em></p>
+<ul>
+<li>Press Ctrl-H to bring up the context help window. Hover over <code>Initialize.vi</code>.</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This remaining content has not been converted to markdown yet!</p>
+</div>
+<p>Notice that VISA resource name is bold. This means that it needs to have an input.</p>
+<ul>
+<li>Now, right-click on VISA Resource Name Initialize.vi and select create constant.</li>
+</ul>
+<p>If you press the Run arrow now you will notice that there is only 1 issue left.</p>
+<p>This VI needs it’s Output and DO Value (True) wiring. So let’s create constants for them. Use the arrow on the right to select an output.</p>
+<p>I 
+t’s nice to have the constant label shown for booleans. </p>
+<ul>
+<li>Right click on the ‘True’ Boolean Constant. This will bring up a drop down window, hover over ‘Visible Items’ and select ‘Label’.</li>
+</ul>
+<p>Constants are terminals on the block diagram that supply fixed data values to the diagram. We’ll discuss data types etc. later in the session.</p>
+<ul>
+<li>
+<p>Finally let’s wire in a couple of outputs. </p>
+</li>
+<li>
+<p>Right-click on IDN for Initialize.vi and select ‘Create Indicator’. Then we need an error out, so right click at the bottom the Close.vi and select ‘Create Indicator’.</p>
+</li>
+</ul>
+<p>Notice how the Indicators appear on the Front Panel. We’ll discuss block-diagrams and front panels in a bit.</p>
+<p>Now we have a running program!</p>
+<p>However, you will notice the we’ll have an error.</p>
+<ul>
+<li>We can interrogate the error message to try and get a clue as to why it all went so wrong. Sometimes it can even be helpful.</li>
+</ul>
+<p>In this case it is!</p>
+<ul>
+<li>
+<p>The VIs don’t know who they are talking to. To fix this, hardware users need to set the correct VISA reference from the ‘VISA’ drop down box.. For Emulator users click the ‘Copy’ button, as seen in the image below and paste the reference in, if you have hardware refresh and select the ASRL reference.</p>
+</li>
+<li>
+<p>Now press run again.</p>
+</li>
+</ul>
+<p>Here we can see that no errors were apparent and Identity has a value.</p>
+<p>But more importantly t 
+he LED on the hardware has turned on.</p>
+<p>Lesson 2 – For Loops
+Optional: Setting up the Hardware
+W 
+ire your hardware like the image below. 
+Lesson Instructions
+A For Loop executes a sub-diagram a set number of times. In this case you will learn how to build a program that will blink the previous LED on and off 10 times each and then stop.</p>
+<ul>
+<li>
+<p>Make your workspace bigger to allow space for adding objects. Use Ctrl then drag to expand.</p>
+</li>
+<li>
+<p>Alternatively select the objects you need to move with the selection tool and drag them where you want with the mouse, or using the arrows.</p>
+</li>
+</ul>
+<p>Note: press Shift and an arrow key to move selected items quicker.</p>
+<ul>
+<li>
+<p>Now insert a For Loop, to do this right click anywhere on the block diagram to bring up the functions palette. Select ‘Structures’ then ‘For Loop’.</p>
+</li>
+<li>
+<p>You will only need to place the For Loop around the WriteDO SubVI (and the constants attached to it.) </p>
+</li>
+<li>
+<p>Once the For Loop has been placed, you will see an ‘N’ in the top left corner, this is the loop count (or how many times the loop will execute.) </p>
+</li>
+<li>
+<p>Right click on the left hand side of the Loop Count, and select ‘Create a Constant’. For this task you will need the Loop Count to be 20 (10 times on and 10 times off.)</p>
+</li>
+</ul>
+<p>In order for the program to ‘blink’ successfully it will need to know what the previous loop has executed, therefore you will need a Shift Register. </p>
+<ul>
+<li>Right click on the edge of the For Loop and select ‘Add Shift Register.’ Wire the True Constant to the Shift Registers and the DO (Value) wire terminal. </li>
+</ul>
+<p>If you were to run the program at this point the LED would light up, but would not ‘blink.’ </p>
+<ul>
+<li>For a blinking LED you will need to invert the boolean value after every loop. To do this right click anywhere to bring up the functions palette. Hover over ‘Boolean’ then select the ‘Not’ Boolean. Wire this into the shift registers.</li>
+</ul>
+<p>The program will now work! However, it will execute very fast, and you will not be able to see the LED blinking. So you need to slow the Loop down.</p>
+<ul>
+<li>
+<p>Right click inside the For Loop, hover over ‘Timing.’ There will see many different timing options. For this you will use the ‘Wait’ function. Select and place inside the Loop. </p>
+</li>
+<li>
+<p>Create a constant by right clicking on the left side of the ‘Wait’ function. The ‘Wait’ function executes in milliseconds, therefore to slow down the Loop by 5 seconds, write 500.</p>
+</li>
+<li>
+<p>Now Run the program. You have successfully used a For Loop to blink the Digital Output.
+Lesson 3 – While Loops</p>
+</li>
+</ul>
+<p>Optional: Setting up the Hardware
+Wire your hardware like the image below.</p>
+<p>Lesson Instructions
+The While Loop executes the sub-diagram until a specific condition occurs. It will always execute at least one time.</p>
+<p>In this case, you want the LED to continually blink on and off until a ‘Stop’ button is pressed. You can create this using the previously built program with the For Loop.</p>
+<ul>
+<li>
+<p>Firstly, right click on the edge of the For Loop, and select ‘Replace with While Loop’</p>
+</li>
+<li>
+<p>Now the For Loop has been replaced, the Loop Count is not connected. This is not needed for a While Loop and can be deleted.</p>
+</li>
+<li>
+<p>To add a ‘Stop’ boolean, switch to the front panel window and right click where you want to place the button. The Controls palette will appear, select ‘Boolean’ and pick a button. The example uses a ‘Push Button’ but any will work.</p>
+</li>
+<li>
+<p>Back on the Block Diagram move the new Control Boolean into the While Loop and wire it up to the Conditional Terminal in the bottom right corner. If the Button on the Front Panel is pressed when the program is running then the Loop will end and the ‘blinking’ LED will stop.</p>
+</li>
+</ul>
+<p>Exercise – Use DI to stop the loop
+Hint: wiring diagram for DI
+H 
+int: VI for DI</p>
+<p>Lesson 4 – Event Structure
+Optional: Setting up the Hardware
+Wire your hardware like the image below.</p>
+<p>Lesson Instructions
+An Event Structure waits until a certain event occurs, then executes the appropriate case to handle that event. In this example, we want to press a buttons and the corresponding light to turn on. </p>
+<ul>
+<li>
+<p>First lets delete the while loop and its contents. Click on the While Loop and press the delete key. Do the same for the ‘True’ constant. Then remove the broken wires with Ctrl+B.</p>
+</li>
+<li>
+<p>Right click to bring up the Functions Palette, hover over ‘Structures’ then select ‘Event Structure.’ Place the Event Structure on the Block Diagram.</p>
+</li>
+<li>
+<p>Wire the Initialize VI and the Close VI through the Event Structure.</p>
+</li>
+<li>A 
+dd a new Event Case by right clicking on the Selector Label, and select ‘Add Event Case.’</li>
+<li>A </li>
+</ul>
+<p>dd the WriteDO.vi by bringing up the Functions Palette, hover over ‘Instrument I/O’, ‘Instr Drivers,’ ‘HandsOnPi2040,’ and select ‘WriteDO.vi. 
+* Drag the sub VI inside the Event Structure and wire it up. Right click the Output terminal and create a Constant.
+* C 
+hange the Output from ‘No DO – Error’ to ‘DO1’ by clicking the drop down arrow on the Output Constant.</p>
+<ul>
+<li>Next we need to add a button for the Digital Output. Go to the Front Panel, and right click anywhere to bring up the Controls Palette. Hover over ‘Boolean,’ and select ‘Push Button’</li>
+<li>W </li>
+</ul>
+<p>ire the new Boolean Control into the ‘DO Value’ terminal.
+* Right click on the Label Selector as we need to ‘Edit Events Handled by This Case.’
+* T 
+his will bring up the ‘Edit Events’ window. Select ‘Boolean.’ </p>
+<ul>
+<li>This Event Case is now complete. We will need 3 more Event Cases, each one corresponding to a LED. The easiest way to do this is to right click the Label Selector, and select ‘Duplicate Event Case.’</li>
+<li>
+<p>S 
+elect ‘Boolean 2’ on the Edit Events window.</p>
+</li>
+<li>
+<p>It’s important to change the DO Constant when the case has been duplicated. (DO1 for Boolean, DO2 for Boolean 2, etc.) Duplicate this case 2 more times for DO3, and DO4.</p>
+</li>
+<li>A 
+t this point your Front Panel may look a little messy, take some time to clean it up. This will make it easier to use when you have finished building the program.
+Y </li>
+</ul>
+<p>ou will be able to Run the program now, however, it will Stop after one Boolean has been selected. We can make this more efficient. 
+* Back on the Block Diagram we will need to add a While Loop. Right click to bring up the Functions Palette, hover over ‘Structures’ and select ‘While Loop.’
+* P </p>
+<p>lace the While Loop around the Event Structure.
+* Go to the Front Panel, so we can add a ‘Stop’ button that we’ll connect to the Loop Condition. Right click to bring up the Controls Palette, hover over ‘Boolean, then select ‘Stop Button.’
+* W </p>
+<p>e will also need to create a new Event Case for this Stop button. Right click on the Selector Label and select ‘Add Event Case.’
+* Place the ‘Stop’ control inside the new case.
+* R 
+ight click the Selector Label and select ‘Edit Events Handled by This Case’</p>
+<ul>
+<li>When the ‘Edit Events’ window pops up choose the ‘stop’ option in the ‘Event Sources’ table.</li>
+<li>O 
+ur last step is to wire a ‘True’ constant to the Loop condition. Right click to bring up the Functions Palette, hover over ‘Boolean’ and select ‘True Constant.’</li>
+<li>
+<p>Place the Constant inside the Event Structure.</p>
+</li>
+<li>
+<p>Wire the constant to the Loop Condition, like the image below.</p>
+</li>
+<li>T 
+he program will now run successfully. You will be able to turn the LEDs on and off as many times as you want. You can use the Stop button to stop the execution of the program.</li>
+</ul>
+<p>Lesson 5 – Numbers, Graphs and Charts
+Optional: Setting up the Hardware
+Wire your hardware like the image below.</p>
+<p>Lesson Instructions
+Analog Input
+Now you have made working programs using Digital Inputs and Outputs, it’s time to have a look at the Analog Inputs and Outputs. 
+For this lesson you will be focusing on the Analog Inputs (or Analog sticks). </p>
+<ul>
+<li>
+<p>Like the lessons before, start with placing the Initialize.vi, and the Close.vi on a new Block Diagram.</p>
+</li>
+<li>
+<p>Right click to bring up the Functions Palette. Follow along with the image below and place the ReadAI.vi on the diagram. </p>
+</li>
+<li>
+<p>Y 
+ou want to create a constant by right clicking on Analog Input on the left of the ReadAIs.vi, and selecting Create Constant.</p>
+</li>
+<li>
+<p>C 
+reate an Indicator for the Analog value on the right side of the vi.</p>
+</li>
+<li>W 
+ire your program like the image below.
+      The program will successfully run at this point, however, it will execute too fast to move the Analog Sticks for continuous data.</li>
+<li>To 
+fix this issue, you can add a While Loop. Bring up the Functions Palette, then ‘Structures’, and select ‘While Loop’. Place this around the ReadAIs.vi, but leave space for other functions.</li>
+<li>A 
+While Loop will not work without adding a Loop Condition. In most cases this will simply be a Stop Boolean. Right click on the Loop Condition and ‘Create Control’.
+      T 
+his will automatically add a Stop Boolean onto the Front Panel.</li>
+<li>You can run the program now and when you turn the Analog Sticks the value will show.
+I 
+f you are using physical Pico Bread Board and Analog Board you will notice the ‘Value’ Indicator will flicker between numbers, this is normal and is simply extra ‘noise’ from the equipment.</li>
+<li>
+<p>However, it is also possible to replace this with a Chart which will show the data continuously. R ight click on the Value Indicator, and hover over Replace. This will bring up the Control Palette. Select Graph and then a Waveform Chart. 
+Analog Output (Write)</p>
+</li>
+<li>
+<p>B 
+eginning with a Block Diagram with an Initialize.vi and a Close.vi. Right click to bring up the Functions Palette. Follow along with the image below and add the WriteAO.vi onto the diagram. </p>
+</li>
+<li>Wire up the 3 VIs.</li>
+<li>
+<p>Right click on the ‘Analog Output’ terminal and Create a Constant. For this exercise the Analog Output will produce 2 different pieces of numerical data, therefore 2 constants will be grouped into 
+a Cluster.</p>
+</li>
+<li>
+<p>You will need to create a Bundle. Right click on the Block Diagram to bring up the Functions palette, hover over ‘Cluster, Class, &amp; Variant, then select ‘Bundle By Name.’</p>
+</li>
+<li>
+<p>Delete the wire connected to the subVI, as it needs to be wired into the bundle you built before.</p>
+</li>
+<li>W 
+ire the bundle and the like the image below.</li>
+<li>Once wired up 
+, you will notice that the bundle has the label ‘Duty’. Expand the Bundle down so the ‘Frequency’ label is visib 
+le.</li>
+<li>Right click at the edge of the bundle and create Constants for ‘Duty’ and ‘Frequency.’</li>
+<li>T 
+he fr 
+ont panel should look like the image below. However, this needs some adjusting. 
+      Using ‘Numeric Control’ may be a little fiddly when the program runs, so in this case you will swap these out for ‘Vertical Pointer Slides.’ </li>
+<li>R </li>
+</ul>
+<p>ight click on the ‘Duty’ Control and hover over ‘Replace.’ Select ‘Numeric’ and then ‘Vertical Pointer Slide.’ Do the same for the ‘Frequency’ Control.
+* Y 
+ou will need to change the ‘Scale’ of the ‘Frequency’ slider. Right click on the Slider, select ‘Scale’, ‘Mapping’, then ‘Logarithmic.’
+A logarithmic scale is useful when the data you are displaying is much less or much more than the rest of the data, or when the percentage differences between values are important. 
+* The ‘Duty’ slider can stay as a Linear scale. 
+* N </p>
+<p>ow you need to set the top and bottom points on the sliders. You will only need to change the highest point for ‘Duty’. Set it to ‘1’.
+* For ‘Frequency’ the lowest point should be ‘10’ and the highest ‘500,000.’
+Now let’s head back to the Block Diagram and finish building the program.
+* B 
+ring up the Functions Palette by right clicking on the Block Diagram, hover over ‘Structures’ and select a For Loop. Place the For Loop around the WriteAO.vi.
+* A For Loop needs a ‘Loop Count.’ Choose a number that will allow you to time to use the dials and see how it executes on the Waveform Chart.</p>
+<ul>
+<li>You will need to slow down the Program before running it. Bring up the Functions Palette, select ‘Timing’ and place the ‘Wait (ms)’ function inside the For Loop.</li>
+<li>
+<p>Right 
+click the left hand terminal on the Wait function and create a Constant. Type in ‘100’ this will slow the program down enough for you to see the results.</p>
+</li>
+<li>
+<p>Y ou can now run your program. Move the Vertical Pointer Slides up and down and you will be results will show on the Emulator. 
+Analog Output (Read)
+If you want a more accurate representation for the ‘Duty’ and ‘Frequency’ sliders you can use the ReadAOs.vi.
+Place the ReadAOs.vi inside the For Loop by repeat the same process you learnt at the beginning of the Anal 
+og Output (Write) lesson.</p>
+</li>
+<li>W 
+ire the subVI as show in the image below. Right click on the ‘AnalogOutput’ terminal and create a Constant, then create an Indicator for the ‘AnOutValues.’</li>
+<li>
+<p>Y 
+ou can now run the program, and you will see the Values for ‘Duty’ and ‘Frequency’ on the Front Panel.
+If you are usi 
+ng the Simulator the values for both will appear on the Emulator.
+General Concepts
+VIs (Virtual Instruments)
+Programs in LabVIEW are called VIs (Virtual Instruments). In other programming languages a VI is similar to a function or a subroutine. A VI includes a Front Panel and a Block Diagram, the VIs Icon and its Connector Pane.</p>
+</li>
+<li>
+<p>Front Panel
+      The front panel window is the user interface for the VI. You create the window with controls and indicators, these are the interactive input and output terminals of the VI.</p>
+</li>
+<li>Block Diagram
+      The Block Diagram is where you will create the code for your program. The block diagram will implement graphical representations of functions to control the objects on the front panel. Objects on the front panel will appear as terminals on the block diagram. </li>
+<li>Icons, Connector Panes, and SubVIs
+      The icon and connector pane allow you to use and view the VI in another VI. This is called a SubVI, to use a SubVI you must build a connector pane. Customising the Icon is recommended to help with reading and understanding the program.
+        ◦ The Icon is displayed in the upper right corner of the VI, it is a graphical representation of the VI. The icon can be customised with text and images to help identify what the VI does. 
+        ◦ The connector pane is a set of terminals on the icon the corresponds to the controls and indicators of the VI.</li>
+</ul>
+<p>Data Types
+Each variable in a program must have a data type. The data types determines what type of value the variable will hold.</p>
+<p>Numeric – 
+* Integer (int) – whole numbers (e.g., -700, 0, 700)
+* Floating point (float) – numbers with fractions (decimals) (e.g., 700.0, 0.7)
+Boolean – represents 2 states (e.g., true, or false, 1 or 0)
+String – sequence of characters, digits, or symbols – always treated as text (e.g., hello)
+Enumerated type – predefined unique values (can be text or numerical) (e.g., rock (0) jazz (1)
+Character – a single letter, digit, punctuation mark, symbol, or blank space.
+Array – stores multiple elements in a specific order. Note: black means no datatype selected. Drop another datatype into the array to make an array of that datatype.</p>
+<p>Note: right click on a data type terminal and select ‘View as Icon’ depending on your preference. (The 2nd row shows the terminals as icons.)</p>
+<p>While Loops
+While Loops allow portions of a program to execute repeatedly until a certain condition is met.
+    1. I 
+teration Terminal – the iteration terminal provides the current loop iteration.
+    2. Conditional Terminal – Evaluates a Boolean input value at the end of each loop iteration, if the conditional terminal is met then the loop stops.</p>
+<p>For Loops
+A For Loop executes a sub-diagram a certain number of times. This value is wired to the Count Terminal (N).</p>
+<pre><code>1. Iteration Loop – Indicates the number of completed iterations.
+2. Count Terminal – Specifies the number of times to execute the code inside the For Loop.
+</code></pre>
+<p>Event Structures
+An Event Structure waits until an event occurs, then executes the appropriate case to handle that event.</p>
+<pre><code>1. The event selector label specifies which events cause the displayed case to execute. 
+2. The Timeout terminals specifies the number of milliseconds to wait for an event before timing out.
+
+3. The Event Data Node identifies the data LabVIEW returns when an event occurs
+</code></pre>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>
